@@ -21,13 +21,13 @@ public class TestController {
     @GetMapping(value = "/name")
     public String getTest2(@RequestParam String name){
         LOGGER.info("getTest2 호출");
-        return "Hello" +name+" AxisServerBox";
+        return "Hello " +name+" from AxisServerBox";
     }
 
     @GetMapping(value = "/path-variable/{name}")
     public String getTest3(@PathVariable String name){
         LOGGER.info("getTest3 호출");
-        return "Hello" +name+" AxisServerBox";
+        return "Hello " +name+" from AxisServerBox ";
     }
 
     @PostMapping(value = "/member")

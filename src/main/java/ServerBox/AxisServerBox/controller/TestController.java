@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.*;
 public class TestController {
    private final Logger LOGGER=  LoggerFactory.getLogger(TestController.class);
 
-    @GetMapping(value = "/axis")
+    @GetMapping(value = "/jong-ho")
     public String getTest(){
         LOGGER.info("getTest1 호출");
-        return "Hello Axis from AxisServerBox";
+        return "Hello Jong Ho from AxisServerBox";
     }
 
     @GetMapping(value = "/name")
